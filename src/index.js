@@ -4,19 +4,19 @@ import './index.css';
 
 const App = () => {
   return (
-    <div>
-        <h1>To Do:</h1>
-        <ul className="myApp">
-           <li>Play</li>
-          <li>Sleep</li>
-          <li>Iron</li>
+    <div className="container">
+       <h1 className="title">My name is Olusegun</h1>
+       <p>I am a self-taught developer who would build the next big thing!
+         My top 3 vacations are: <br/>
+       </p>
+       <ul>
+         <li>Bahamas</li>
+         <li>Toronto</li>
+         <li>New York</li>
        </ul>
-    </div> 
-  );
-}
+    </div>
+  )
+};
 
-ReactDOM.render(
-  <App/>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App/>, document.getElementById('root'));
 
