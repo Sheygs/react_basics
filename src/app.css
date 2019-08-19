@@ -1,0 +1,31 @@
+.todo-list {
+  width:33%;
+  background:whitesmoke;
+  margin: 1rem auto;
+  padding: 1rem 1.25rem;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  border: 1px solid #efefef;
+
+}
+
+.todo-item {
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  width:70%;
+  border-bottom:1px solid #333;
+  padding: 1.5rem 1.25rem;
+  font-size: 1.5rem;
+  font-weight:100;
+
+}
+
+.todo-item:nth-child(4){
+  border:none;
+}
+
+.todo-item input[type=checkbox]{
+  margin-left:1rem;
+}
