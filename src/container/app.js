@@ -1,9 +1,11 @@
 import React from 'react';
-import Lists from '../components/Lists';
+import './app.css';
+//import Lists from '../components/Lists';
+import MyInfo from '../components/MyInfo';
 const App = _ => {
   return (
     <div>
-        <Lists/> 
+       <MyInfo/>
     </div>
   )
 }  
