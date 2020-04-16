@@ -2,7 +2,7 @@ const todoData = [
   {
    id: 1,
    text: "Sort out laundry",
-   isComplete: true
+   isComplete: false
   },
   {
    id: 2,
@@ -12,12 +12,12 @@ const todoData = [
   {
    id: 3,
    text: "Code",
-   isComplete: true
+   isComplete: false
   },
   {
    id: 4,
    text: "Read a book",
-   isComplete: true
+   isComplete: false
   },
   {
    id: 5,

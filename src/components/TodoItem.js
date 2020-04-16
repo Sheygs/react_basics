@@ -1,13 +1,13 @@
 import React from 'react';
 
-const handleOnchange = () => console.log('Changed!');
+// const handleOnchange = () => console.log('Changed!');
 
 function TodoItem(props){
- console.log(props);  
+ // console.log(props);  
  return (
     <div className="todo-item"> 
          <input 
-           onChange={handleOnchange} 
+           onChange={ () => props.handleOnChange(props.todo.id) } 
            type="checkbox" 
            checked={props.todo.isComplete}
          />
