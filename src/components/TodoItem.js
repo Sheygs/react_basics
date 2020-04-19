@@ -3,15 +3,20 @@ import React from 'react';
 // const handleOnchange = () => console.log('Changed!');
 
 function TodoItem(props){
- // console.log(props);  
+ // console.log(props);
+ const { todo } = props;
+ const styles = {
+   textDecoration: todo.isComplete  && "line-through",
+   color: todo.isComplete && "grey"
+ }
  return (
     <div className="todo-item"> 
          <input 
-           onChange={ () => props.handleOnChange(props.todo.id) } 
+           onChange={ () => props.handleOnChange(todo.id) } 
            type="checkbox" 
-           checked={props.todo.isComplete}
+           checked={todo.isComplete}
          />
-         <p>{props.todo.text}</p>
+         <p style={styles}>{todo.text}</p>
     </div>
  )
 };
