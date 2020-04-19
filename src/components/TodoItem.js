@@ -2,13 +2,15 @@ import React from 'react';
 
 function TodoItem(props){
  // console.log(props);
+ 
  const { todo, handleOnChange } = props;
 
  const styles = {
    textDecoration: todo.isComplete  && "line-through",
-   color: todo.isComplete && "grey"
+   color: todo.isComplete && "grey",
+   fontStyle: todo.isComplete && "italic"
  }
- 
+
  return (
     <div className="todo-item"> 
          <input 
