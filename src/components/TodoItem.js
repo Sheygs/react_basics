@@ -1,7 +1,5 @@
 import React from 'react';
 
-// const handleOnchange = () => console.log('Changed!');
-
 function TodoItem(props){
  // console.log(props);
  const { todo } = props;
