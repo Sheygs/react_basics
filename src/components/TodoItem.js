@@ -4,21 +4,22 @@ function TodoItem(props){
  // console.log(props);
  
  const { todo, handleOnChange } = props;
+ const { id, text, isComplete } = todo;
 
  const styles = {
-   textDecoration: todo.isComplete  && "line-through",
-   color: todo.isComplete && "grey",
-   fontStyle: todo.isComplete && "italic"
+   textDecoration: "line-through",
+   color: "grey",
+   fontStyle: "italic"
  }
 
  return (
     <div className="todo-item"> 
          <input 
-           onChange={ () => handleOnChange(todo.id) } 
+           onChange={ () => handleOnChange(id) } 
            type="checkbox" 
-           checked={todo.isComplete}
+           checked={isComplete}
          />
-         <p style={styles}>{todo.text}</p>
+         <p style={isComplete ? styles : null }>{text}</p>
     </div>
  )
 };
