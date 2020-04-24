@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import TodoItem from './TodoItem';
-import todoData from './todoData';
+import TodoItem from './todo/TodoItem';
+import todoData from './todo/todoData';
 
 class TodoItems extends Component {
    constructor(){
