@@ -1,8 +1,7 @@
 import React from 'react';
 
-function TodoItem(props){
- // console.log(props);
- 
+function TodoItem(props) {
+
  const { todo, handleOnChange } = props;
  const { id, text, isComplete } = todo;
 

@@ -10,7 +10,7 @@ body {
 .todo-items {
   background-color: white;
   margin: 20px auto;
-  width: 50%;
+  max-width: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
