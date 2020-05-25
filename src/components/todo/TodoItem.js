@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function TodoItem(props) {
-
  const { todo, handleOnChange } = props;
  const { id, text, isComplete } = todo;
 
@@ -22,5 +22,10 @@ function TodoItem(props) {
     </div>
  )
 };
+
+TodoItem.propTypes = {
+  todo: PropTypes.object.isRequired,
+  handleOnChange: PropTypes.func.isRequired
+}
 
 export default TodoItem;
